@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMS Login</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        /* Basic styling for the login form */
+        #login-container {
+            width: 350px;
+            margin: 100px auto;
+            padding: 30px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: var(--content-bg);
+            text-align: center;
+        }
+        #login-form input {
+            margin-bottom: 15px;
+        }
+        #login-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745; /* Success Green */
+        }
+        #login-form button:hover {
+            background-color: #1e7e34;
+        }
+        #login-message {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="login-container">
+        <h1>🏥 HMS Login</h1>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username (admin)" required>
+            <input type="password" id="password" placeholder="Password (password)" required>
+            <button type="submit">Log In</button>
+        </form>
+        <p id="login-message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
